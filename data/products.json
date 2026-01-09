@@ -1,0 +1,153 @@
+{
+    "products": [
+        {
+            "name": "Норвержский",
+            "oldPrice": 520,
+            "price": 468,
+            "imageUrl": "img/norvegian.png",
+            "category": "Aкции",
+            "badgeText": "Скидка 10%",
+            "badgeType": "discount",
+            "badgeTextTwo": "Распродажа",
+            "badgeTypeTwo": "sale"
+        },
+        {
+            "name": "Хрустящий",
+            "oldPrice": 480,
+            "price": 408,
+            "imageUrl": "img/crisp.png",
+            "category": "Aкции",
+            "badgeText": "Скидка 15%",
+            "badgeType": "discount",
+            "badgeTextTwo": "Рекомендуем",
+            "badgeTypeTwo": "recommendation"
+        },
+        {
+            "name": "Крем Чиз",
+            "oldPrice": 380,
+            "price": 330,
+            "imageUrl": "img/cream.png",
+            "category": "Aкции",
+            "badgeText": "Скидка 150",
+            "badgeType": "discount",
+            "badgeTextTwo": "Распродажа",
+            "badgeTypeTwo": "sale"
+        },
+        {
+            "name": "Сет Маки",
+            "oldPrice": 1400,
+            "price": 1150,
+            "imageUrl": "img/maki.png",
+            "category": "Aкции",
+            "badgeText": "Скидка 250",
+            "badgeType": "discount",
+            "badgeTextTwo": "Распродажа",
+            "badgeTypeTwo": "sale"
+        },
+        {
+            "name": "Сет Торио",
+            "oldPrice": null,
+            "price": 2400,
+            "imageUrl": "img/torio.png",
+            "category": "Сеты"
+        },
+        {
+            "name": "Сет Маки",
+            "oldPrice": 1400,
+            "price": 1150,
+            "imageUrl": "img/maki.png",
+            "category": "Сеты",
+            "badgeText": "Скидка 250",
+            "badgeType": "discount",
+            "badgeTextTwo": "Распродажа",
+            "badgeTypeTwo": "sale"
+        },
+        {
+            "name": "Сет Сорано",
+            "oldPrice": null,
+            "price": 1900,
+            "imageUrl": "img/sorano.png",
+            "category": "Сеты"
+        },
+        {
+            "name": "Сет Унаги",
+            "oldPrice": null,
+            "price": 1200,
+            "imageUrl": "img/ynagi.png",
+            "category": "Сеты"
+        }
+    ],
+
+    "modelProducts": [
+        {
+            "name": "Норвержский",
+            "article": "m-004",
+            "oldPrice": 820,
+            "price": 738,
+            "imgUrl": "img/norvegian.png",
+            "weight": "500 гр.",
+            "description": "Нежный лосось, сыр пармезан, кунжут, спайси соус",
+            "inStock": true
+        },
+        {
+            "name": "Сет Маки",
+            "article": "m-030", 
+            "oldPrice": 1400,
+            "price": 1150,
+            "imgUrl": "img/maki.png",
+            "weight": "1 кг",
+            "description": "Неземное удовольствие от Ниямы - новый сет Copано (в переводе с ...",
+            "inStock": true
+        },
+        {
+            "name": "Хрустящий",
+            "article": "m-009",
+            "oldPrice": 480,
+            "price": 408,
+            "imgUrl": "img/crisp.png",
+            "weight": "1 кг",
+            "description": "Сливочный сыр, сыр чеддер, огурец, икра, лосось, соус спайси",
+            "inStock": true
+        },
+        {
+            "name": "Крем Чиз",
+            "article": "m-004",
+            "oldPrice": 480,
+            "price": 330,
+            "imgUrl": "img/cream.png",
+            "weight": "1 кг",
+            "description": "Нежный лосось, сыр пармезан, кунжут, спайси соус",
+            "inStock": true
+        },
+        {
+            "name": "Сет Торио",
+            "article": "m-029",
+            "oldPrice": 2400,
+            "price": 1400,
+            "imgUrl": "img/torio.png",
+            "weight": "1 кг", 
+            "description": "Калифорния ролл, Ролл Кюран эби, Ролл Эби чиз сяке, Ролл Сяке 6о ...",
+            "inStock": true
+        },
+        {
+            "name": "Сет Сорано", 
+            "article": "m-031",
+            "oldPrice": 1900,
+            "price": 1400,
+            "imgUrl": "img/sorano.png",
+            "weight": "1 кг",
+            "description": "Каппа маки, Авокадо маки, Унаги маки, Сике маки, Магуро маки",
+            "inStock": true
+        },
+        {
+            "name": "Сет Унаги",
+            "article": "m-032",
+            "oldPrice": 1200, 
+            "price": 1400,
+            "imgUrl": "img/ynagi.png",
+            "weight": "1 кг",
+            "description": "Ролл Канада, Ролл Эби кристи, Ролл Чикен гарлик, Ролл Кани чиз сяке ...",
+            "inStock": true
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/cart.css">
+    <script src="./script/loadProd.js"></script>
+</head>
+
+<body>
+    <header class="header center">
+        <a href="index.html"><img class="header__logo" src="./img/icon-header/logo.png" alt="logo"></a>
+        <nav class="header__nav">
+            <div class="header__address">
+                <img class="header__icon" src="./img/icon-header/location.png" alt="location">
+                <a class="header__select" href="#">Москва</a>
+            </div>
+            <ul class="header__menu">
+                <li class="header__item"><a class="header__link" href="#">Меню</a></li>
+                <li class="header__item"><a class="header__link" href="#">Оплата</a></li>
+                <li class="header__item"><a class="header__link" href="#">Доставка</a></li>
+                <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header__user">
+            <button class="header__btn"><img class="header__icon" src="./img/icon-header/user.png" alt="user"></button>
+            <button class="header__btn"><img class="header__icon" src="./img/icon-header/heart.png"
+                    alt="heart"></button>
+            <a class="header__cart" href="cart.html">
+                <button class="header__btn header__btn_orange">
+                    <img class="header__icon" src="./img/icon-header/cart.png" alt="cart">
+                    <p class="header__text">0 руб.</p>
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <main class="cart center">
+        <header class="cart__header">
+            <h2 class="cart__title">Корзина</h1>
+                <div class="cart__btn-box">
+                    <button class="cart__btn cart__btn_delete" onclick="clearCart()">Очистить корзину</button>
+                    <button class="cart__btn cart__btn_share">Поделиться</button>
+                </div>
+        </header>
+        <div class="cart__card-form">
+            <section class="cart__cards" id="cartProducts">
+            </section>
+
+            <form action="#" class="cart-form">
+                <fieldset class="cart-form__box">
+                    <legend class="cart-form__title">Купон/Сертификат</legend>
+                    <div class="cart-form__box-btn">
+                        <input class="cart-form__input" type="text">
+                        <button class="cart-form__btn">Применить</button>
+                    </div>
+                </fieldset>
+                <fieldset class="cart-form__box">
+                    <legend class="cart-form__title">Стоимость</legend>
+                    <div class="cart-form__end">
+                        <p>Итого:</p>
+                        <p id="totalPrice">0 руб.</p>
+                    </div>
+                </fieldset>
+                <fieldset class="cart-form__box-link">
+                    <button class="cart-form__btn-end" onclick="checkoutOrder(); return false;">Оформить</button>
+                    <a class="cart-form__link" href="#" onclick="checkoutOrder(); return false;">Купить в один клик</a>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <script src="./script/cart.js"></script>
+</body>
+
+</html>

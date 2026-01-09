@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/loadProd.js"></script>
+</head>
+
+<body>
+    <header class="header center">
+        <a href="index.html"><img class="header__logo" src="./img/icon-header/logo.png" alt="logo"></a>
+        <nav class="header__nav">
+            <div class="header__address">
+                <img class="header__icon" src="./img/icon-header/location.png" alt="location">
+                <a class="header__select" href="#">Москва</a>
+            </div>
+            <ul class="header__menu">
+                <li class="header__item"><a class="header__link" href="#">Меню</a></li>
+                <li class="header__item"><a class="header__link" href="#">Оплата</a></li>
+                <li class="header__item"><a class="header__link" href="#">Доставка</a></li>
+                <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header__user">
+            <button class="header__btn"><img class="header__icon" src="./img/icon-header/user.png" alt="user"></button>
+            <button class="header__btn"><img class="header__icon" src="./img/icon-header/heart.png"
+                    alt="heart"></button>
+            <a class="header__cart" href="cart.html">
+                <button class="header__btn header__btn_orange">
+                    <img class="header__icon" src="./img/icon-header/cart.png" alt="cart">
+                    <p class="header__text">0 руб.</p>
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <main class="main center">
+        <aside class="aside">
+            <div class="aside__menu aside__menu_white">
+                <img src="./img/icons/stock.png" alt="stock">
+                <a class="aside__link" href="#Sale">Акции</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/sets.png" alt="sets">
+                <a class="aside__link" href="#Sets">Сеты</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/breakfast.png" alt="breakfast">
+                <a class="aside__link" href="#">Завтраки</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/pizza.png" alt="pizza">
+                <a class="aside__link" href="#">Пицца</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/salads.png" alt="salads">
+                <a class="aside__link" href="#">Салаты</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/rolls.png" alt="rolls">
+                <a class="aside__link" href="#">Роллы</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/temp-rolls.png" alt="temp-rolls">
+                <a class="aside__link" href="#">Темпурные роллы</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/sushi.png" alt="sushi">
+                <a class="aside__link" href="#">Суши</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/gunkans.png" alt="gunkans">
+                <a class="aside__link" href="#">Гунканы</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/sandwiches.png" alt="sandwiches">
+                <a class="aside__link" href="#">Сендвичи</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/desserts.png" alt="desserts">
+                <a class="aside__link" href="#">Десерты</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/coffee.png" alt="coffee">
+                <a class="aside__link" href="#">Кофе</a>
+            </div>
+            <div class="aside__menu">
+                <img src="./img/icons/milkshakes.png" alt="milkshakes">
+                <a class="aside__link" href="#">Милкшейки</a>
+            </div>
+        </aside>
+
+        <div class="main__empty-element"></div>
+
+        <div class="main-box">
+            <section class="main-box__hero">
+                <header class="main-box__header">
+                    <div class="main-box__btn-adderss">
+                        <div class="main-box_btn-box">
+                            <button class="main-box__btn main-box__btn_active">Курьер</button>
+                            <button class="main-box__btn">Самовывоз</button>
+                        </div>
+                        <img class="main-box__img" src="./img/icon-header/pin.png" alt="address">
+                        <div class="main-box__address">
+                            <p class="main-box__text">Доставим по адресу</p>
+                            <h4 class="main-box__text-bolder">Введите наш адрес</h4>
+                        </div>
+                    </div>
+                    <a class="main-box_link" href="#">Изменить</a>
+                </header>
+                <section class="product-box__slider">
+                    <div class="product-box__arrow">
+                        <img id="prefBtn" src="./img/left.png" alt="left">
+                        <img id="nextBtn" src="./img/right.png" alt="right">
+                    </div>
+                    <div class="product-box__slides">
+                        <img class="product-box__img" src="./img/hero.jpg" alt="women">
+                        <img class="product-box__img" src="./img/hero2.jpg" alt="women">
+                        <img class="product-box__img" src="./img/hero3.jpg" alt="women">
+                    </div>
+                </section>
+            </section>
+
+            <div class="product-box">
+            </div>
+
+            <div class="product-box__modal">
+            </div>
+        </div>
+    </main>
+
+    <script src="./script/slider.js"></script>
+    <script src="./script/modal.js"></script>
+    <script src="./script/cart.js"></script>
+</body>
+
+</html>

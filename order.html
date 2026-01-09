@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/order.css">
+    <script src="./script/loadProd.js"></script>
+</head>
+
+<body>
+    <header class="header center">
+        <a href="index.html"><img class="header__logo" src="./img/icon-header/logo.png" alt="logo"></a>
+        <nav class="header__nav">
+            <div class="header__address">
+                <img class="header__icon" src="./img/icon-header/location.png" alt="location">
+                <a class="header__select" href="#">Москва</a>
+            </div>
+            <ul class="header__menu">
+                <li class="header__item"><a class="header__link" href="#">Меню</a></li>
+                <li class="header__item"><a class="header__link" href="#">Оплата</a></li>
+                <li class="header__item"><a class="header__link" href="#">Доставка</a></li>
+                <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header__user">
+            <button class="header__btn"><img class="header__icon" src="./img/icon-header/user.png" alt="user"></button>
+            <button class="header__btn"><img class="header__icon" src="./img/icon-header/heart.png"
+                    alt="heart"></button>
+            <a class="header__cart" href="cart.html">
+                <button class="header__btn header__btn_orange">
+                    <img class="header__icon" src="./img/icon-header/cart.png" alt="cart">
+                    <p class="header__text">0 руб.</p>
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-order center">
+        <div class="order__header">
+            <h1 class="order__title">Заказ успешно оформлен!</h1>
+            <div class="order__success">✅ Спасибо за ваш заказ!</div>
+        </div>
+
+        <div class="order__container">
+            <div class="order__section">
+                <h2 class="section__title">Информация о заказе</h2>
+                <div class="order__info">
+                    <div class="info__item">
+                        <span class="info__label">Номер заказа:</span>
+                        <span class="info__value" id="orderNumber">-</span>
+                    </div>
+                    <div class="info__item">
+                        <span class="info__label">Дата оформления:</span>
+                        <span class="info__value" id="orderDate">-</span>
+                    </div>
+                    <div class="info__item">
+                        <span class="info__label">Статус:</span>
+                        <span class="info__value" style="color: #4CAF50;">Обрабатывается</span>
+                    </div>
+                    <div class="info__item">
+                        <span class="info__label">Способ доставки:</span>
+                        <span class="info__value">Курьер</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-order">
+                <div class="order__section">
+                    <h2 class="section__title">Состав заказа</h2>
+                    <div class="order__products" id="orderProducts">
+                    </div>
+                    <div class="order__total">
+                        Итого: <span id="orderTotal">0 руб.</span>
+                    </div>
+                </div>
+        
+                <div class="order__actions">
+                    <a href="index.html" class="btn btn__primary">Вернуться в магазин</a>
+                    <a href="cart.html" class="btn btn__secondary">Корзина</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script/order.js"></script>
+    <script src="./script/cart.js"></script>
+</body>
+
+</html>
